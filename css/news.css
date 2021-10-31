@@ -1,0 +1,183 @@
+/*font*/
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 30px;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 26px;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+/*top*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/*top-img*/
+.top-img {
+  background: url(../img/mv.png);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-ttl {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-ttl h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.top-ttl p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*contact*/
+.top-contact {
+  background-color: #f5f6f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.top-contact-ttl {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.top-contact-desc {
+  font-family: sans-serif;
+  color: #333;
+  margin-top: 20px;
+}
+
+.top-contact-btn {
+  width: 200px;
+  padding: 10px;
+  text-decoration: none;
+  background: red;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin: 40px auto 0;
+}
+
+.top-contact-btn:hover {
+  background: #e83f5f;
+}
+
+.top-contact-list a {
+  background: #fff;
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+
+/*footer*/
+footer {
+  padding: 20px 0;
+  background-color: black;
+  color: #fff;
+}
+
+.footer-wrap {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+small {
+  font-size: 10px;
+}
+
+.footer-nav-item::after {
+  content: "|";
+  padding: 0 10px;
+}
+
+/*top-news*/
+.top-news-inner {
+  width: 85%;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.top-news-list a {
+  background: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.top-news-list a:hover {
+  background: #c9c9c4;
+}
+
+.top-news-list h3 {
+  padding-left: 10px;
+  font-weight: bold;
+}
