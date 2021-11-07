@@ -53,6 +53,7 @@ a {
   background: #eee;
   transition: .7s;
   text-align: center;
+  display: block;
 }
 
 .nav2 ul {
