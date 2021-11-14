@@ -20,10 +20,20 @@ header h1{
 header a{
   text-decoration: none;
   color:#333;
+  padding: 20px 0;
+  display: block;
 }
 
 header ul{
   display:flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+ header ul {
+   display: flex;
+   flex-direction: column;
+ }
 }
 
 header li{
@@ -31,9 +41,10 @@ header li{
   font-weight: bold;
 }
 
-.nav2 {
-  display: none;
+.nav2.in {
+  display: block;
 }
+
 
 @media screen and (max-width: 768px) {
   .nav1 {
@@ -53,7 +64,7 @@ a {
   background: #eee;
   transition: .7s;
   text-align: center;
-  display: block;
+  display:none;
 }
 
 .nav2 ul {
