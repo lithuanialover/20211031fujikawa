@@ -7,14 +7,15 @@
     <title>株式会社TECH</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/common.css" />
   </head>
 
   <body>
     <!--header-->
     <header>
-      <h1><a href="index.html">TECH</a>
-      </h1>
-      <nav class="nav1">
+      <a href="index.html" class="logo">TECH</a>
+      <!--メモ：同じhtmlを書く場合、1つに対して メディアクリエをmin, maxでつける-->
+      <nav class="top_nav">
         <ul>
           <li><a href="index.html">ホーム</a></li>
           <li><a href="service.html">事業内容</a></li>
@@ -23,6 +24,17 @@
           <li><a href="company.html">会社概要</a></li>
           <li><a href="recruit.html">採用情報</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <nav class="drawer_nav" id="drawer_nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="service.html">事業内容</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="blog.html">社員ブログ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
       <div class="menu" id="menu">
@@ -30,23 +42,12 @@
         <span class="menu__line--middle"></span>
         <span class="menu__line--bottom"></span>
       </div>
-      <nav class="nav2" id="nav">
-        <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="service.html">事業内容</a></li>
-          <li><a href="news.html">ニュース</a></li>
-          <li><a href="blog.html">社員ブログ</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="recruit.html">採用情報</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <!--top-->
       <div class="top-img">
         <div class="top-ttl">
-          <h1>ニュース</h1>
+          <h1>社員ブログ</h1>
         </div>
       </div>
       <section class="top-blog">
@@ -84,9 +85,16 @@
           </section>
         </div>
       </section>
+      <section class="top-contact">
+        <div class="wrap">
+          <h2 class="top-contact-ttl">お問合せ</h2>
+          <p class="top-contact-desc">お仕事のご依頼や採用に関してはお問合せにて承っております。</p>
+          <a href="contact.html" class="top-contact-btn">お問い合わせ</a>
+        </div>
+      </section>
     <!--footer-->
     <footer>
-      <div class="footer-wrap">
+      <div class="footer-inner wrap">
         <small class="footer-copyright">©2020 TECH inc.</small>
         <nav class="footer-nav">
           <ul class="footer-nav-list">
@@ -102,7 +110,7 @@
       </div>
     </footer>
     <!--JavaScript-->
-    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

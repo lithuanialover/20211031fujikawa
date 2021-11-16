@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>株式会社TECH</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index2.css" />
+    <link rel="stylesheet" href="css/common.css" />
   </head>
 
   <body>
     <!--header-->
     <header>
-      <h1><a href="index.html">TECH</a>
-      </h1>
-      <nav class="nav1">
+      <a href="index.html" class="logo">TECH</a>
+      <!--メモ：同じhtmlを書く場合、1つに対して メディアクリエをmin, maxでつける-->
+      <nav class="top_nav">
         <ul>
           <li><a href="index.html">ホーム</a></li>
           <li><a href="service.html">事業内容</a></li>
@@ -23,6 +23,17 @@
           <li><a href="company.html">会社概要</a></li>
           <li><a href="recruit.html">採用情報</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <nav class="drawer_nav" id="drawer_nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="service.html">事業内容</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="blog.html">社員ブログ</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
       <div class="menu" id="menu">
@@ -30,24 +41,13 @@
         <span class="menu__line--middle"></span>
         <span class="menu__line--bottom"></span>
       </div>
-      <nav class="nav2 in" id="nav">
-        <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="service.html">事業内容</a></li>
-          <li><a href="news.html">ニュース</a></li>
-          <li><a href="blog.html">社員ブログ</a></li>
-          <li><a href="company.html">会社概要</a></li>
-          <li><a href="recruit.html">採用情報</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <!--top-->
       <div class="top-img">
         <div class="top-ttl">
-          <h1>最新のテクノロジーで社会課題を解決</h1>
-          <p>Solving social issues with tthe latest technology</p>
+          <p class="top-ttl-main">最新のテクノロジーで社会課題を解決</p>
+          <p class="top-ttl-sub">Solving social issues with tthe latest technology</p>
         </div>
       </div>
       <!--top-concept-->
@@ -55,30 +55,30 @@
         <div class="top-concept-text">
           <h2>株式会社TECHの想い</h2>
           <p>あらゆる産業において、新たなデジタル技術を使ってこれまでにないビジネスモデルを展開する新規参入者が登場し、ゲームチェンジが起ころうとしています。こうした中で、各企業は、競争力維持・強化のために、DXを迅速に進めていくことが求められています。しかし、DXにおいて投資コストは非常にかかります。株式会社TECHで独自のオペレーションと人材教育により、他者よりも価格を抑えた開発を行います。</p>
-        </div>  
+        </div>
       </div>
       <!--top-service-->
       <section class="top-service">
         <h2>サービス</h2>
         <div class="top-service-list">
           <section class="top-service-item">
-            <img src="../20211031_Fujikawa/img/service1.png" alt="">
+            <img src="../20211114_ResponsiveWebsite_Fujikawa/img/service1.png" alt="">
             <h3>IT人材育成事業</h3>
             <p>これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。</p>
           </section>
           <section class="top-service-item">
-            <img src="../20211031_Fujikawa/img/service2.png" alt="">
+            <img src="../20211114_ResponsiveWebsite_Fujikawa/img/service2.png" alt="">
             <h3 class="top-service-item-ttl">コーチング事業</h3>
             <p class="top-service-item-desc">目標達成を最短で実現するために、プロコーチによるマンツーマンのサポートを実施します。</p>
           </section>
           <section class="top-service-item">
-            <img src="../20211031_Fujikawa/img/service3.png" alt="">
+            <img src="../20211114_ResponsiveWebsite_Fujikawa/img/service3.png" alt="">
             <h3 class="top-service-item-ttl">ITコンサル事業</h3>
             <p class="top-service-item-desc">経営戦略にIT戦略を策定し、システム開発の提案やシステムの最適化を通じて、企業の経営をサポートします。
             </p>
           </section>
           <section class="top-service-item">
-            <img src="../20211031_Fujikawa/img/service4.png" alt="">
+            <img src="../20211114_ResponsiveWebsite_Fujikawa/img/service4.png" alt="">
             <h3 class="top-service-item-ttl">デジタルトランスフォーメーション事業</h3>
             <p class="top-service-item-desc">人々の生活をよりよりモノに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。</p>
           </section>
@@ -113,17 +113,17 @@
         <h2>社員ブログ</h2>
         <div class="top-blog-list">
           <section class="top-blog-item">
-            <a href="index.html"><img src="img/blog.png"></a>
+            <a href="index.html" class="top-blog-img"><img src="img/blog.png"></a>
             <p class="top-blog-item-date">2019/07/17</p>
             <h3 class="top-blog-item-ttl">会社を創業した理由</h3>
           </section>
           <section class="top-blog-item">
-            <a href="index.html"><img src="img/blog.png"></a>
+            <a href="index.html" class="top-blog-img"><img src="img/blog.png"></a>
             <p class="top-blog-item-date">2019/11/11</p>
             <h3 class="top-blog-item-ttl">ITエンジニアを育成する最強メソッド</h3>
           </section>
           <section class="top-blog-item">
-            <a href="index.html"><img src="img/blog.png"></a>
+            <a href="index.html" class="top-blog-img"><img src="img/blog.png"></a>
             <p class="top-blog-item-date">2020/08/01</p>
             <h3 class="top-blog-item-ttl">コーチングによるモチベーション向上理論</h3>
           </section>
@@ -150,7 +150,7 @@
     </main>
     <!--footer-->
     <footer>
-      <div class="footer-wrap">
+      <div class="footer-inner wrap">
         <small class="footer-copyright">©2020 TECH inc.</small>
         <nav class="footer-nav">
           <ul class="footer-nav-list">
@@ -168,5 +168,4 @@
     <!--JavaScript-->
     <script src="js/main.js"></script>
   </body>
-
 </html>
